@@ -29,9 +29,9 @@ const ListadoPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
         <>
           <h2 className='font-black text-3xl text-center'>No hay pacientes</h2>
           <p className='text-xl mt-5 mb-10 text-center'> {''}
-            <img src={veterinaria} alt='veterinaria'/>
+            <img src={veterinaria} alt='veterinaria' className='m-auto md:flex max-w-md'/>
           </p>
-            {/* <span className='text-indigo-400 font-bold'>y aparecerán en este lugar</span> */}
+        
         </>
       )}
     </div>
