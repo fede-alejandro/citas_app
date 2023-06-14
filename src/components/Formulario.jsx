@@ -69,13 +69,13 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
   return (
     <div className='md:w-1/2 lg:w-2/5'>
       <h2 className='font-black text-3xl text-center'>Seguimiento pacientes</h2>
-      <p className='text-lg mt-5 text-center mb-10'>Añade pacientes y {''}
-        <span className='text-indigo-600 font-bold'>Administrarlos</span>
+      <p className='text-lg font-black mt-5 text-center mb-10'>Añade pacientes y {''}
+        <span className='text-blue-600 font-bold'>Administrarlos</span>
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className='bg-white shadow-md rounded-lg py-10 px-5 mb-10 mx-5'>
+        className='bg-gray-400 shadow-md rounded-lg py-10 px-5 mb-10 mx-5'>
 
         {error && <Error><p>Todos los campos son obligatorios</p></Error>}
 
@@ -87,7 +87,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
             id='mascota'
             type='text'
             placeholder='nombre de la mascota'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 bg-gray-200 rounded-md'
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
           />
@@ -101,7 +101,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
             id='propietario'
             type='text'
             placeholder='nombre del propietario'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 bg-gray-200 rounded-md'
             value={propietario}
             onChange={(e) => setPropietario(e.target.value)}
           />
@@ -115,7 +115,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
             id='email'
             type='email'
             placeholder='ingrese su email'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 bg-gray-200 rounded-md'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -128,7 +128,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
           <input
             id='alta'
             type='date'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 bg-gray-200 rounded-md'
             value={fecha}
             onChange={(e) => setFecha(e.target.value)}
           />
@@ -140,7 +140,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
             className='block text-gray-700 uppercase font-bold'>Síntomas</label>
           <textarea
             id='síntomas'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 bg-gray-200 rounded-md'
             placeholder='Describe los síntomas'
             value={sintomas}
             onChange={(e) => setSintomas(e.target.value)}

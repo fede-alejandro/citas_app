@@ -10,25 +10,25 @@ const Pacientes = ({ paciente, setPaciente, eliminarPaciente }) => {
         }
     }
     return (
-        <div className='mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl'>
+        <div className='mx-5 my-10 bg-gray-400 shadow-md px-5 py-10 rounded-xl'>
             <p className='font-bold mb-3 text-gray-700 uppercase'>Nombre: {''}
-                <span className='font-normal normal-case'>{nombre}</span>
+                <span className='ml-2 normal-case font-medium'>{nombre}</span>
             </p>
 
             <p className='font-bold mb-3 text-gray-700 uppercase'>Propietario: {''}
-                <span className='font-normal normal-case'>{propietario}</span>
+                <span className='ml-2 normal-case font-medium'>{propietario}</span>
             </p>
 
             <p className='font-bold mb-3 text-gray-700 uppercase'>Email: {''}
-                <span className='font-normal normal-case'>{email}</span>
+                <span className='ml-2 normal-case font-medium'>{email}</span>
             </p>
 
             <p className='font-bold mb-3 text-gray-700 uppercase'>Fecha alta: {''}
-                <span className='font-normal normal-case'>{fecha}</span>
+                <span className='ml-2 normal-case font-medium'>{fecha}</span>
             </p>
 
             <p className='font-bold mb-3 text-gray-700 uppercase'>Síntomas: {''}
-                <span className='font-normal normal-case'>{sintomas}</span>
+                <span className='ml-2 normal-case font-medium'>{sintomas}</span>
             </p>
             <div className='flex justify-between mt-10'>
                 <button
